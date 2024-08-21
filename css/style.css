@@ -1,0 +1,54 @@
+.colour1{
+    background-color: brown;
+}
+.colour2{
+    background-color: blueviolet;
+}
+.colour3{
+    background-color: blue;
+}
+.colour4{
+    background-color: aqua;
+}
+.colour5{
+    background-color: chartreuse;
+}
+.colour6{
+    background-color: violet;
+}
+.colour7{
+    background-color: cornflowerblue;
+}
+.colour8{
+    background-color: darkorange;
+}
+.colour8{
+    background-color: teal;
+}
+
+
+
+
+
+
+
+
+.logo_img{
+    width: 60px;
+    height: 52px;
+}
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+.font{
+    font-family: "Anton", sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+    color: white;
+
+}
+header{
+    background-color: black;
+}
