@@ -1,0 +1,133 @@
+.colour1{
+    background-color: brown;
+}
+.colour2{
+    background-color: blueviolet;
+}
+.colour3{
+    background-color: blue;
+}
+.colour4{
+    background-color: aqua;
+}
+.colour5{
+    background-color: chartreuse;
+}
+.colour6{
+    background-color: violet;
+}
+.colour7{
+    background-color: cornflowerblue;
+}
+.colour8{
+    background-color: darkorange;
+}
+.colour8{
+    background-color: teal;
+}
+
+
+
+
+
+
+
+body{
+    background-color: black;
+}
+.logo_img{
+    width: 60px;
+    height: 52px;
+}
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+.font{
+    font-family: "Anton", sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+    color: white;
+
+}
+header{
+    background-color: black;
+}
+.background{
+    background-image: url(/img/Top_img.jpeg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Adjusts height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 5px;
+    
+}
+.heading {
+    font-size: 3rem; /* Default for smaller screens */
+}
+
+.subheading {
+    font-size: 1.5rem; /* Default for smaller screens */
+}
+
+.service-block{
+    background-color: #353b48;
+}
+
+/* Bootstrap breakpoints */
+@media (min-width: 576px) { /* sm and up */
+    .heading {
+        font-size: 4rem;
+    }
+    .subheading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 768px) { /* md and up */
+    .heading {
+        font-size: 5rem;
+    }
+    .subheading {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) { /* lg and up */
+    .heading {
+        font-size: 6rem;
+    }
+    .subheading {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 1200px) { /* xl and up */
+    .heading {
+        font-size: 7rem;
+    }
+    .subheading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1400px) { /* xxl and up */
+    .heading {
+        font-size: 8rem;
+    }
+    .subheading {
+        font-size: 3rem;
+    }
+}
+
+.btn-background{
+    color: white;
+    background-color: rgb(155, 68, 237);
+}
