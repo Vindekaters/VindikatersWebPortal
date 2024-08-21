@@ -32,7 +32,9 @@
 
 
 
-
+body{
+    background-color: black;
+}
 .logo_img{
     width: 60px;
     height: 52px;
@@ -73,6 +75,10 @@ header{
 
 .subheading {
     font-size: 1.5rem; /* Default for smaller screens */
+}
+
+.service-block{
+    background-color: #353b48;
 }
 
 /* Bootstrap breakpoints */
