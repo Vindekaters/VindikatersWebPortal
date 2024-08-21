@@ -131,3 +131,47 @@ header{
     color: white;
     background-color: rgb(155, 68, 237);
 }
+
+.project1{
+    background-image: url(/img/WebApplication.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    height: 70vh;
+}
+
+.project2{
+    background-image: url(/img/Standalone.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    height: 70vh;
+}
+
+.project3{
+    background-image: url(/img/javaGames.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    height: 70vh;
+}
+
+.abboutusimg {
+    background-image: url(/img/vindikaters_logo_transparent_final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Changed from 100vh to 50vh for better responsiveness */
+}
+
+@media (min-width: 768px) {
+    .abboutusimg {
+        height: 60vh; /* Increase height slightly on medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .abboutusimg {
+        height: 70vh; /* Further increase height on large screens */
+    }
+}
