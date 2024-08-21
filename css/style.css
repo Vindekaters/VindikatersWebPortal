@@ -46,7 +46,7 @@ header {
     background-color: black;
 }
 .background {
-    background-image: url(/img/Top_img.jpeg.jpg);
+    background-image: url(../img/Top_img.jpeg.jpg);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
@@ -129,7 +129,7 @@ header {
 }
 
 .project1 {
-    background-image: url(/img/WebApplication.png);
+    background-image: url(../img/WebApplication.png);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
@@ -139,7 +139,7 @@ header {
 }
 
 .project2 {
-    background-image: url(/img/Standalone.png);
+    background-image: url(../img/Standalone.png);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
@@ -149,7 +149,7 @@ header {
 }
 
 .project3 {
-    background-image: url(/img/javaGames.png);
+    background-image: url(../img/javaGames.png);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
@@ -164,7 +164,7 @@ header {
 }
 
 .abboutusimg {
-    background-image: url(/img/vindikaters_logo_transparent_final.png);
+    background-image: url(../img/vindikaters_logo_transparent_final.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
