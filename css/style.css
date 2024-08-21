@@ -175,3 +175,11 @@ header{
         height: 70vh; /* Further increase height on large screens */
     }
 }
+.getintouch{
+    background-color: #19232d;
+}
+
+.txtgenintoch{
+    color: rgb(171, 110, 229);
+    font-size: 50px;
+}

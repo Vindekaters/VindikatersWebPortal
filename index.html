@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <header class="p-3 mb-0 border-bottom">
+        <header class="p-3 mb-0 border-bottom" id="home">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -24,11 +24,11 @@
                     </a>
                     <P class="justify-content-center mb-md-0 font ms-2 me-5">Vindikaters</P>
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 link-secondary fw-bolder">Home</a></li>
-                        <li><a href="#" class="nav-link px-2 link-secondary fw-bolder">About Us</a></li>
-                        <li><a href="#" class="nav-link px-2 link-secondary fw-bolder">Services</a></li>
-                        <li><a href="#" class="nav-link px-2 link-secondary fw-bolder">Portfolio</a></li>
-                        <li><a href="#" class="nav-link px-2 link-secondary fw-bolder">Contact Us</a></li>
+                        <li><a href="#home" class="nav-link px-2 text-white fw-bolder">Home</a></li>
+                        <li><a href="#aboutus" class="nav-link px-2 text-white fw-bolder">About Us</a></li>
+                        <li><a href="#services" class="nav-link px-2 text-white fw-bolder">Services</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white fw-bolder">Portfolio</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white fw-bolder">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,7 +46,7 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-12 p-4">
-                <h3 class="text-white fw-bolder text-center fs-1">Our Services</h3>
+                <h3 class="text-white fw-bolder text-center fs-1" id="services">Our Services</h3>
             </div>
         </div>
         <div class="row">
@@ -122,7 +122,7 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-12 p-4">
-                <h3 class="text-white fw-bolder text-center display-4">About Us</h3>
+                <h3 class="text-white fw-bolder text-center display-4" id="aboutus">About Us</h3>
             </div>
         </div>
         <div class="row">
@@ -130,29 +130,89 @@
                 <div class="abboutusimg rounded-1 p-3"></div>
             </div>
             <div class="col-sm-12 col-md-6 mb-3">
-                <p class="text-center text-white">Welcome to Vindikaters, your go-to team for innovative digital solutions. We specialize in creating
+                <p class="text-center text-white">Welcome to Vindikaters, your go-to team for innovative digital
+                    solutions. We specialize in creating
                     high-quality desktop applications, cutting-edge website applications, and engaging games that stand
                     out in the digital world. Our mission is to turn your ideas into reality by delivering tailor-made
                     software solutions that meet your unique needs.<br><br>
-    
+
                     At Vindikaters, we combine creativity with technical expertise to produce software that is not only
                     functional but also user-friendly and visually appealing. Our team of skilled developers, designers,
                     and strategists work collaboratively to ensure that every project we undertake is a success. From
                     concept to completion, we are committed to providing exceptional service, maintaining transparency,
                     and exceeding expectations.<br><br>
-    
+
                     Whether you're looking to develop a new application, enhance your online presence, or create a game
                     that captivates audiences, Vindikaters is here to help you every step of the way. We pride ourselves
                     on our ability to adapt to the ever-changing tech landscape, ensuring that our solutions are always
                     at the forefront of innovation.<br><br>
-    
+
                     Join us on our journey to create the future of digital experiences.</p>
             </div>
         </div>
     </div>
+    <div class="container-fluid getintouch">
+        <div class="row p-5">
+            <div class="col text-center">
+                <p class="txtgenintoch fw-bolder">Get In Touch</p>
+                <p class="text-white">Reach out to us for any inquiries or assistance. We're here to help</p>
+                <button class="p-2 rounded btn-background">Get in Touch</button>
+            </div>
+        </div>
+    </div>
     <footer>
-
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="text-center pt-5">
+                        <div class="mb-5">
+                            <p class="text-white fs-4 fw-semibold">Subscribe to newsletter</p>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
+                                <input type="email" name="email" placeholder="Input Your Email" id="txtemail"
+                                    class="bg-transparent rounded-4 px-2 py-1 text-white fw-bolder w-100 w-md-auto">
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-center">
+                                <button type="button"
+                                    class="rounded-4 px-5 text-white fw-bolder py-1 btn-background border-0">Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <ul class="nav justify-content-center flex-wrap">
+                                    <li class="nav-item mx-2"><a href="#"
+                                            class="nav-link text-white fw-bolder">Pricing</a></li>
+                                    <li class="nav-item mx-2"><a href="#aboutus" class="nav-link text-white fw-bolder">About
+                                            Us</a></li>
+                                    <li class="nav-item mx-2"><a href="#"
+                                            class="nav-link text-white fw-bolder">Features</a></li>
+                                    <li class="nav-item mx-2"><a href="#" class="nav-link text-white fw-bolder">Help
+                                            Center</a></li>
+                                    <li class="nav-item mx-2"><a href="#" class="nav-link text-white fw-bolder">Contact
+                                            Us</a></li>
+                                    <li class="nav-item mx-2"><a href="#" class="nav-link text-white fw-bolder">FAQs</a>
+                                    </li>
+                                    <li class="nav-item mx-2"><a href="#"
+                                            class="nav-link text-white fw-bolder">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-white text-center mb-0">===================================</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
