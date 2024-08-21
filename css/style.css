@@ -1,41 +1,33 @@
-.colour1{
+/* Original styles */
+.colour1 {
     background-color: brown;
 }
-.colour2{
+.colour2 {
     background-color: blueviolet;
 }
-.colour3{
+.colour3 {
     background-color: blue;
 }
-.colour4{
+.colour4 {
     background-color: aqua;
 }
-.colour5{
+.colour5 {
     background-color: chartreuse;
 }
-.colour6{
+.colour6 {
     background-color: violet;
 }
-.colour7{
+.colour7 {
     background-color: cornflowerblue;
 }
-.colour8{
-    background-color: darkorange;
-}
-.colour8{
+.colour8 {
     background-color: teal;
 }
 
-
-
-
-
-
-
-body{
+body {
     background-color: black;
 }
-.logo_img{
+.logo_img {
     width: 60px;
     height: 52px;
 }
@@ -43,18 +35,17 @@ body{
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-}  
-.font{
+}
+.font {
     font-family: "Anton", sans-serif;
     font-size: large;
     letter-spacing: 1px;
     color: white;
-
 }
-header{
+header {
     background-color: black;
 }
-.background{
+.background {
     background-image: url(/img/Top_img.jpeg.jpg);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
@@ -67,7 +58,6 @@ header{
     color: white;
     font-family: "Anton", sans-serif;
     letter-spacing: 5px;
-    
 }
 .heading {
     font-size: 3rem; /* Default for smaller screens */
@@ -77,7 +67,7 @@ header{
     font-size: 1.5rem; /* Default for smaller screens */
 }
 
-.service-block{
+.service-block {
     background-color: #353b48;
 }
 
@@ -127,33 +117,50 @@ header{
     }
 }
 
-.btn-background{
+.btn-background {
     color: white;
     background-color: rgb(155, 68, 237);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
-.project1{
+.btn-background:hover {
+    background-color: #a04dd9;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.project1 {
     background-image: url(/img/WebApplication.png);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
     height: 70vh;
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
-.project2{
+.project2 {
     background-image: url(/img/Standalone.png);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
     height: 70vh;
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
-.project3{
+.project3 {
     background-image: url(/img/javaGames.png);
     background-repeat: no-repeat;
     background-size: cover; /* Makes the image cover the entire container */
     background-position: center; /* Centers the image */
     height: 70vh;
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect on project images */
+.project1:hover, .project2:hover, .project3:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
 }
 
 .abboutusimg {
@@ -175,11 +182,103 @@ header{
         height: 70vh; /* Further increase height on large screens */
     }
 }
-.getintouch{
+.getintouch {
     background-color: #19232d;
 }
 
-.txtgenintoch{
+.txtgenintoch {
     color: rgb(171, 110, 229);
     font-size: 50px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Adding the animated classes for the heading, subheading, button, and images */
+.animated-heading {
+    animation: slideIn 1s ease-in-out;
+}
+
+.animated-subheading {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.animated-button {
+    animation: slideIn 2s ease-in-out;
+}
+
+.animated-bg {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animated-logo {
+    animation: slideIn 1s ease-in-out;
+}
+
+.animated-nav li {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.animated-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animated-project {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.animated-about {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-text {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Hover effect for navigation bar items */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(155, 68, 237);
+    transform: scale(1.1); /* Slightly enlarges the navigation link on hover */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #a04dd9;
+    transform: scale(1.05);
 }
