@@ -40,7 +40,6 @@ body {
     font-family: "Anton", sans-serif;
     font-size: large;
     letter-spacing: 1px;
-    color: white;
 }
 header {
     background-color: black;
@@ -265,20 +264,75 @@ header {
 }
 
 /* Hover effect for navigation bar items */
-nav a {
+/* a {
     color: white;
     text-decoration: none;
     padding: 10px;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+} */
+li a{
+    text-decoration: none;
+    color: white;
 }
 
-nav a:hover {
-    color: rgb(155, 68, 237);
-    transform: scale(1.1); /* Slightly enlarges the navigation link on hover */
+li :hover {
+    text-decoration: underline;
+    color: rgb(127, 17, 230);
+    transform: scale(1.1);
 }
 
 /* Hover effect for buttons */
 button:hover {
     background-color: #a04dd9;
     transform: scale(1.05);
+}
+
+.projectimg{
+    width: 140px; 
+}
+
+.background-WebApplication {
+    background-image: url(../img/webapplication1080p.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Adjusts height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 5px;
+}
+
+.background-games {
+    background-image: url(../img/javagames1080p.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Adjusts height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 5px;
+}
+
+
+.background-standalon{
+    background-image: url(../img/Standalone1080p.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Adjusts height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 5px;
 }
