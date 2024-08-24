@@ -55,11 +55,16 @@ header {
 .heading {
     font-size: 3rem;
 }
+.heading2 {
+    font-size: 2rem;
+}
 
 .subheading {
     font-size: 1.5rem;
 }
-
+.subheading2 {
+    font-size: 1.5rem;
+}
 .service-block {
     background-color: #353b48;
 }
@@ -188,6 +193,10 @@ li:hover {
     transform: scale(1.1);
 }
 
+.highlight{
+    color: rgb(127, 17, 230);
+}
+
 /* Background Sections */
 
 .abboutusimg {
@@ -212,7 +221,20 @@ li:hover {
     font-family: "Anton", sans-serif;
     letter-spacing: 5px;
 }
-
+.background-portfolio {
+    background-image: url(../img/portfolio_background_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 5px;
+}
 .background-WebApplication {
     background-image: url(../img/webapplication1080p.png);
     background-repeat: no-repeat;
