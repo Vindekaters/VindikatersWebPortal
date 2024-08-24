@@ -1,4 +1,5 @@
-/* Original styles */
+/* Developing template colours
+
 .colour1 {
     background-color: brown;
 }
@@ -22,165 +23,74 @@
 }
 .colour8 {
     background-color: teal;
-}
+}  */
 
 body {
     background-color: black;
 }
+
 .logo_img {
     width: 60px;
     height: 52px;
 }
+
 .anton-regular {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 .font {
     font-family: "Anton", sans-serif;
     font-size: large;
     letter-spacing: 1px;
 }
+
 header {
     background-color: black;
 }
-.background {
-    background-image: url(../img/Top_img.jpeg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: center; /* Centers the image */
-    height: 100vh; /* Adjusts height to 100% of the viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-family: "Anton", sans-serif;
-    letter-spacing: 5px;
-}
+
+
+
 .heading {
-    font-size: 3rem; /* Default for smaller screens */
+    font-size: 3rem;
 }
 
 .subheading {
-    font-size: 1.5rem; /* Default for smaller screens */
+    font-size: 1.5rem;
 }
 
 .service-block {
     background-color: #353b48;
 }
 
-/* Bootstrap breakpoints */
-@media (min-width: 576px) { /* sm and up */
-    .heading {
-        font-size: 4rem;
-    }
-    .subheading {
-        font-size: 1.75rem;
-    }
-}
 
-@media (min-width: 768px) { /* md and up */
-    .heading {
-        font-size: 5rem;
-    }
-    .subheading {
-        font-size: 2rem;
-    }
-}
 
-@media (min-width: 992px) { /* lg and up */
-    .heading {
-        font-size: 6rem;
-    }
-    .subheading {
-        font-size: 2.25rem;
-    }
-}
-
-@media (min-width: 1200px) { /* xl and up */
-    .heading {
-        font-size: 7rem;
-    }
-    .subheading {
-        font-size: 2.5rem;
-    }
-}
-
-@media (min-width: 1400px) { /* xxl and up */
-    .heading {
-        font-size: 8rem;
-    }
-    .subheading {
-        font-size: 3rem;
-    }
-}
-
+/* Button and Image Styles */
 .btn-background {
     color: white;
     background-color: rgb(155, 68, 237);
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .btn-background:hover {
     background-color: #a04dd9;
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    transform: scale(1.05);
 }
 
-.project1 {
-    background-image: url(../img/WebApplication.png);
-    background-repeat: no-repeat;
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: center; /* Centers the image */
-    height: 70vh;
-    animation: fadeInUp 1.5s ease-in-out;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-
-.project2 {
-    background-image: url(../img/Standalone.png);
-    background-repeat: no-repeat;
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: center; /* Centers the image */
-    height: 70vh;
-    animation: fadeInUp 1.5s ease-in-out;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-
-.project3 {
-    background-image: url(../img/javaGames.png);
-    background-repeat: no-repeat;
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: center; /* Centers the image */
-    height: 70vh;
-    animation: fadeInUp 1.5s ease-in-out;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
+.projectimg {
+    width: 140px;
+    height: auto;
 }
 
 /* Hover effect on project images */
-.project1:hover, .project2:hover, .project3:hover {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
+.project1:hover,
+.project2:hover,
+.project3:hover {
+    transform: scale(1.05);
 }
 
-.abboutusimg {
-    background-image: url(../img/vindikaters_logo_transparent_final.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh; /* Changed from 100vh to 50vh for better responsiveness */
-}
-
-@media (min-width: 768px) {
-    .abboutusimg {
-        height: 60vh; /* Increase height slightly on medium screens */
-    }
-}
-
-@media (min-width: 992px) {
-    .abboutusimg {
-        height: 70vh; /* Further increase height on large screens */
-    }
-}
+/* Get in Touch Section */
 .getintouch {
     background-color: #19232d;
 }
@@ -196,6 +106,7 @@ header {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -207,6 +118,7 @@ header {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -217,12 +129,13 @@ header {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
-/* Adding the animated classes for the heading, subheading, button, and images */
+/* Animation Classes */
 .animated-heading {
     animation: slideIn 1s ease-in-out;
 }
@@ -264,39 +177,48 @@ header {
 }
 
 /* Hover effect for navigation bar items */
-/* a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-} */
-li a{
+li a {
     text-decoration: none;
     color: white;
 }
 
-li :hover {
+li:hover {
     text-decoration: underline;
     color: rgb(127, 17, 230);
     transform: scale(1.1);
 }
 
-/* Hover effect for buttons */
-button:hover {
-    background-color: #a04dd9;
-    transform: scale(1.05);
+/* Background Sections */
+
+.abboutusimg {
+    background-image: url(../img/vindikaters_logo_transparent_final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
 }
 
-.projectimg{
-    width: 140px; 
+.background {
+    background-image: url(../img/Top_img.jpeg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 5px;
 }
 
 .background-WebApplication {
     background-image: url(../img/webapplication1080p.png);
     background-repeat: no-repeat;
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: center; /* Centers the image */
-    height: 100vh; /* Adjusts height to 100% of the viewport height */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,9 +231,9 @@ button:hover {
 .background-games {
     background-image: url(../img/javagames1080p.png);
     background-repeat: no-repeat;
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: center; /* Centers the image */
-    height: 100vh; /* Adjusts height to 100% of the viewport height */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,13 +243,12 @@ button:hover {
     letter-spacing: 5px;
 }
 
-
-.background-standalon{
+.background-standalon {
     background-image: url(../img/Standalone1080p.png);
     background-repeat: no-repeat;
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: center; /* Centers the image */
-    height: 100vh; /* Adjusts height to 100% of the viewport height */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,4 +256,150 @@ button:hover {
     color: white;
     font-family: "Anton", sans-serif;
     letter-spacing: 5px;
+}
+
+/* Project Backgrounds */
+.project1 {
+    background-image: url(../img/WebApplication.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project2 {
+    background-image: url(../img/Standalone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project3 {
+    background-image: url(../img/javaGames.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* *** Responsive Adjustments *** */
+@media (max-width: 575.98px) {
+    .projectimg {
+        width: 80px;
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .font {
+        font-size: medium;
+    }
+
+    .heading,
+    .subheading {
+        font-size: 2rem;
+    }
+
+    .background-WebApplication,
+    .background-games,
+    .background-standalon {
+        height: 50vh;
+        /* Reduce height for extra small screens */
+    }
+}
+
+@media (min-width: 576px) {
+    .heading {
+        font-size: 5rem;
+    }
+
+    .subheading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 5rem;
+    }
+
+    .subheading {
+        font-size: 2rem;
+    }
+
+    .background-WebApplication,
+    .background-games,
+    .background-standalon {
+        height: 75vh;
+        /* Increase height for medium screens */
+    }
+
+    .abboutusimg {
+        height: 60vh;
+        /* Increase height slightly on medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .heading {
+        font-size: 6rem;
+    }
+
+    .subheading {
+        font-size: 2.25rem;
+    }
+
+    .background-WebApplication,
+    .background-games,
+    .background-standalon {
+        height: 85vh;
+        /* Increase height for large screens */
+    }
+
+    .abboutusimg {
+        height: 70vh;
+        /* Further increase height on large screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .heading {
+        font-size: 7rem;
+    }
+
+    .subheading {
+        font-size: 2.5rem;
+    }
+
+    .background-WebApplication,
+    .background-games,
+    .background-standalon {
+        height: 100vh;
+        /* Set height to full viewport for extra-large screens */
+    }
+}
+
+@media (min-width: 1400px) {
+    .heading {
+        font-size: 8rem;
+    }
+
+    .subheading {
+        font-size: 3rem;
+    }
+
+    .background-WebApplication,
+    .background-games,
+    .background-standalon {
+        height: 100vh;
+        /* Full viewport height for extra extra large screens */
+    }
 }
