@@ -13,7 +13,7 @@
       emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
           btn.value = 'Request';
-          alert('Checkyour email inbox or spam folder');
+          alert('Checkyour email inbox');
         }, (err) => {
           btn.value = 'Request';
           alert(JSON.stringify(err));
