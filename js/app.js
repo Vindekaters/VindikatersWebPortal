@@ -1,13 +1,23 @@
-// Initialize AOS (Animate On Scroll) Library
-AOS.init({
-    duration: 1200, // Duration of animation (in milliseconds)
-  });
-  
-  // Apply hover animations using AOS attributes in the HTML file
-  document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('.project1, .project2, .project3');
-    elements.forEach(function(element) {
-      element.setAttribute('data-aos', 'fade-up');
+
+  const btn = document.getElementById('sendmail');
+
+  document.getElementById('form')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      btn.value = 'Requesting...';
+
+      const serviceID = 'default_service';
+      const templateID = 'vindikaters_contactus';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Request';
+          alert('Checkyour email inbox or spam folder');
+        }, (err) => {
+          btn.value = 'Request';
+          alert(JSON.stringify(err));
+        });
     });
-  });
-  
+
+

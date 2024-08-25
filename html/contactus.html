@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <title>Vindikaters | Portfolio</title>
+    
 </head>
 
 <body>
@@ -52,34 +54,32 @@
             <h1 class="text-white font fs-1 animated-heading">Contact Us Form</h1>
         </div>
         <div class="row">
-            <form class="row g-3">
+            <form class="row g-3" id="form">
                 <div class="col-md-6">
-                    <label for="txtfirstname" class="form-label text-white animated-heading">First Name</label>
-                    <input type="text" class="form-control animated-text animated-subheading" id="txtname" placeholder="First Name">
+                    <label for="clientfname" class="form-label text-white animated-heading">First Name</label>
+                    <input type="text" name="clientfname" class="form-control animated-text animated-subheading" id="clientfname" placeholder="First Name">
                 </div>
                 <div class="col-md-6">
-                    <label for="txtlastname" class="form-label text-white text-white animated-heading">Last Name</label>
-                    <input type="text" class="form-control animated-text animated-subheading" id="txtlastname" placeholder="Last Name">
+                    <label for="clientlname" class="form-label text-white text-white animated-heading">Last Name</label>
+                    <input type="text" name="clientlname" class="form-control animated-text animated-subheading" id="clientlname" placeholder="Last Name">
                 </div>
                 <div class="col-12">
-                    <label for="txtemail" class="form-label text-white animated-heading">Email</label>
-                    <input type="email" class="form-control animated-text animated-subheading" id="txtemail" placeholder="Your Email Address">
+                    <label for="clientemail" class="form-label text-white animated-heading">Email</label>
+                    <input type="email" name="clientemail" class="form-control animated-text animated-subheading" id="clientemail" placeholder="Your Email Address">
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label text-white animated-heading">Purpose Of This Action</label>
-                    <select id="inputState" class="form-select animated-text animated-subheading">
-                        <option selected>Choose...</option>
-                        <option>Get a Service</option>
-                        <option>Get a Support</option>
-                        <option>Send aFeedback</option>
+                    <label for="purpose" class="form-label text-white animated-heading">Purpose Of This Action</label>
+                    <select id="purpose" class="form-select animated-text animated-subheading" name="purpose">
+                        <option value="Get a Service">Get a Service</option>
+                        <option value="Get a Support">Get a Support</option>
                     </select>
                 </div>
                 <div class="col-12">
-                    <label for="txtmassage" class="form-label text-white animated-heading">Message</label>
-                    <textarea name="txtmassage" id="txtmassage" class="form-control animated-subheading" placeholder="Messages For Our Refferences"></textarea>
+                    <label for="massage" class="form-label text-white animated-heading">Message</label>
+                    <textarea name="massage" id="massage" class="form-control animated-subheading" placeholder="Messages For Our Refferences"></textarea>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary animated-button">Sign in</button>
+                    <input type="submit" id="sendmail" value="Request" class="btn btn-primary animated-button">
                 </div>
             </form>
         </div>
@@ -98,7 +98,7 @@
                         </div>
                         <div class="row mb-5">
                             <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
-                                <input type="email" name="email" placeholder="Input Your Email" id="txtemail"
+                                <input type="email" name="txtemail" placeholder="Input Your Email" id="txtemail"
                                     class="bg-transparent rounded-4 px-2 py-1 text-white fw-bolder w-100 w-md-auto">
                             </div>
                             <div class="col-12 col-md-6 d-flex justify-content-center">
@@ -133,7 +133,9 @@
             </div>
         </div>
     </footer>
-
+    <script type="text/javascript">
+        emailjs.init('lpMUPRjwe-yJqoAD0')
+      </script>
     <script src="../js/app.js"></script>
 </body>
 
