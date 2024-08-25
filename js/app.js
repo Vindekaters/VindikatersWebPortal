@@ -14,6 +14,7 @@
         .then(() => {
           btn.value = 'Request';
           alert('Checkyour email inbox');
+          document.getElementById("massage").value="";
         }, (err) => {
           btn.value = 'Request';
           alert(JSON.stringify(err));
