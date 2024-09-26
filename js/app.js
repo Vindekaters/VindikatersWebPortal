@@ -22,3 +22,6 @@
     });
 
 
+function goToSite() {
+  window.location.href = 'html/contactus.html#contactusform' ;
+}
